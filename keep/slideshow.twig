@@ -1,0 +1,32 @@
+{{widget('responsiveslideshow', 'responsiveslideshow',
+    {'duration':'5',
+        'transSpeed': '1500',
+        'transType': 'fade',
+        'showButtons': true,
+        'showBullets': false,
+        'allowPause': false,
+        'allowLoop': true,
+        'showDescription': false,
+        'showTitle': false,
+        'images': [
+            {'url':asset('/images/slideshow/1.jpg')},
+            {'url':asset('/images/slideshow/2.jpg')},
+            {'url':asset('/images/slideshow/3.jpg')}
+        ]
+    })|raw
+}}
+
+<div class="widget responsiveslideshow">
+	<section class="color-7">
+		<nav class="nav-thumbflip">
+			<a class="prev" href="/item1">
+				<span class="icon-wrap"></span>
+				<img src="{{asset('images/slideshow/1-thumb.png')}}" alt="Previous thumb"/>
+			</a>
+			<a class="next" href="/item3">
+				<span class="icon-wrap"></span>
+				<img src="{{asset('images/slideshow/2-thumb.png')}}" alt="Next thumb"/>
+			</a>
+		</nav>
+	</section>
+</div>

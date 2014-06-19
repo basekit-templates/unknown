@@ -48,6 +48,10 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-color: @color-swatch7;
+	&.edit {
+		-webkit-transition: inherit;
+		transition: inherit;
+	}
 }
 
 // Page Content
@@ -76,6 +80,7 @@ body {
 // -----------------------------
 
 .template-header {	
+	position: relative;
 	height: 400px;
 	padding-top: 5.5em;
 	@media @tablet {
@@ -90,6 +95,7 @@ body {
 		color: @color-swatch1;
 	}
 	h3 {
+		// line-height: bkscale(@font-swatch3-line-height,0.8);
 		@media @mobile {
 			font-size: bkscale(@font-swatch3-font-size,0.9);
 			line-height: bkscale(@font-swatch3-line-height,0.6);
@@ -110,9 +116,8 @@ body {
 	}
 	// Button
 	button.btn-nav {
-		position: relative;
-		float: right;
-		// display: inline-block;
+		position: absolute;
+		right: 0;
 		width: 41px;
 		height: 35px;
 		background: transparent;

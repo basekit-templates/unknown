@@ -76,6 +76,15 @@ body {
 }
 
 // -----------------------------
+// Page Typography
+// -----------------------------
+
+p, li {
+	font-size: bkscale(@font-swatch5-font-size,0.9);
+	line-height: bkscale(@font-swatch5-line-height,0.9);
+}
+
+// -----------------------------
 // Header
 // -----------------------------
 
@@ -127,6 +136,9 @@ body {
 		cursor: pointer;
 		outline: none;
 		padding: 0;
+		@media @mobile {
+			top: 45px;
+		}
 		&:hover {
 			background-color: darken(@color-swatch3,25%);
 			border: 1px solid darken(@color-swatch3,25%);
@@ -160,6 +172,7 @@ body {
 // Profile Header
 // -----------------------------
 
+// Override
 .profile-header .widget.profile form input {
 	border: 0;
 }
@@ -244,6 +257,9 @@ footer.template-footer {
 			padding: 0;
 			text-indent: 0;
 			line-height: 20px;
+			@media @mobile {
+				width: inherit;
+			}
 		}
 		input,
 		button {

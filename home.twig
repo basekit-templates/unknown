@@ -3,10 +3,10 @@
 
 <section class="page home">
 	<div class="page-content">
-		<ul class="profile-header">
-			<li>{{widget('profile', 'header-profile1', { 'profileType':'phone','phone':'profile'})|raw}}</li>
-			<li>{{widget('profile', 'header-profile2', { 'profileType':'address','address':'profile'})|raw}}</li>
-		</ul>
+		<div class="profile-header">
+			{{widget('profile', 'header-profile1', { 'profileType':'email','email':'profile'})|raw}}
+			{{widget('profile', 'header-profile2', { 'profileType':'address','address':'profile'})|raw}}
+		</div>
 		<div class="canvas">
 			{{widget('feature', 'featurehome', {"header": "profile","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
 			{{zone('main')|raw}}

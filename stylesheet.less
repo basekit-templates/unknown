@@ -60,14 +60,6 @@ body {
 // Page Content
 .page-content {
 	position: relative;
-	// top: -142px;
-	// margin-bottom: -142px;
-	// @media @tablet {
-	// 	top: -100px;
-	// }
-	// @media @mobile {
-	// 	top: -10px;
-	// }
 }
 
 // Canvas
@@ -79,6 +71,10 @@ body {
 	@media @tablet {
 		padding: 20px;
 	}
+}
+
+.widget.extendednavigation .bk-overlay {
+	width: 100%!important;
 }
 
 // -----------------------------
@@ -173,11 +169,12 @@ p, li {
 .profile-header,
 footer.template-footer {
 	display: table;
-	margin: 0 0 -1px auto;
+	margin: 0 0 0 auto;
 	padding: 0;
 	text-align: right;
-	li, p {
+	.profile, p {
 		display: inline-block;
+		// vertical-align: bottom;
 		padding-bottom: 0;
 		@media @mobile {
 			margin-right: 0;
@@ -190,20 +187,15 @@ footer.template-footer {
 			line-height: normal;
 		}
 	}
-	li {
+	.profile {
 		min-height: 22px;
-		margin-right: 10px;
+		margin-left: 10px;
 		padding: 0 10px;
 		background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.5); 
 		border: 1px solid darken(@color-swatch1,65%);
 		border-bottom: 0;
-		&:last-child {
-			margin-right: 0;
-		}
 		@media @mobile {
-			margin-right: 0;
-			line-height: 20px;
-			padding: 10px;
+			padding: 7px 10px;
 		}
 	}
 	p, span, .bk-profile-email a, .widget.profile form input {
@@ -344,10 +336,12 @@ footer.template-footer {
 	margin: 0;
 	padding: 10px 0;
 	background-color: @color-swatch4;
+	text-align: center;
 	h1, h2, h3, h4, p {
 		color: @color-swatch1;
 	}
 	.profile {
+		border: 0;
 		text-transform: uppercase;
 		text-align: center;
 		font-family: @font-swatch4-font-family;

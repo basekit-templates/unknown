@@ -125,7 +125,7 @@ button.btn,
 	padding: 8px 14px;
 	background-color: @color-swatch1;
 	background-size: 18px;
-	border: 2px solid @color-swatch2!important; // Shame CSS
+	border: 2px solid @color-swatch2; // Shame CSS
 	box-shadow:4px 4px 0 @color-swatch1, 6px 6px 0 @color-swatch2;
 	// Font
 	color: @font-swatch7-color;
@@ -248,6 +248,12 @@ button.btn,
 		padding-bottom: 0;
 	}
 	// Tweet Content
+	.twitter-profile-pic {
+		@media @tablet {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
 	.twitter-content {
 		float: left;
 		.bk-full-name,

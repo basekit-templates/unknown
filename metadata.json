@@ -30,7 +30,7 @@
             "font-family": "\"Cabin\", \"Oswald\", Arial, sans-serif",
             "font-size": "25px",
             "font-weight": "700",
-            "line-height": "40px",
+            "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -38,13 +38,13 @@
             "font-family": "\"Source Sans Pro\", \"Lato\", Arial, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
-            "line-height": "30px",
+            "line-height": "24px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
             "font-family": "\"Source Sans Pro\", \"Lato\", Arial, sans-serif",
-            "font-size": "18px",
+            "font-size": "19px",
             "font-weight": "inherit",
             "line-height": "32px",
             "color": "@color-swatch4",
@@ -99,7 +99,7 @@
             "font-family": "\"Bree Serif\", \"Merriweather\", sans-serif",
             "font-size": "40px",
             "font-weight": "inherit",
-            "line-height": "46px",
+            "line-height": "36px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         }

@@ -209,11 +209,18 @@ footer.template-footer {
 	}
 	// Social Icons
 	.widget.profile .bk-profile-socialicons {
+		display: inline-block;
+		vertical-align: bottom;
 		margin: 0;
-		line-height: 36px;
+		line-height: 16px;
 		span a {
 			margin: 0 -6px 0 0;
 			background-color: transparent;
+			text-indent: 9999px;
+			overflow: hidden;
+			@media @mobile {
+				height: 18px;
+			}
 			&:hover {
 				opacity: 0.7;
 			}
@@ -299,8 +306,8 @@ footer.template-footer {
 			}
 		}
 	}
-	h3 {
-		// display: none;
+	h2 {
+		line-height: bkscale(@font-swatch8-line-height,0.8);
 	}
 }
 

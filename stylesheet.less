@@ -90,6 +90,16 @@ p, li {
 // Header
 // -----------------------------
 
+body {
+	&.swatch-3,
+	&.swatch-4 {
+		button.btn-nav:hover {
+			background-color: @color-swatch3;
+			border-color: @color-swatch3;
+		}
+	}
+}
+
 .template-header {	
 	position: relative;
 	padding: 5.5em 4em 5.5em 0;
@@ -351,6 +361,7 @@ footer.template-footer {
 		border: 0;
 		text-transform: uppercase;
 		text-align: center;
+		background-color: transparent;
 		font-family: @font-swatch4-font-family;
 		font-size: bkscale(@font-swatch4-font-size,0.8);
 		font-weight: @font-swatch4-font-weight;
@@ -384,13 +395,6 @@ footer.template-footer {
 		}
 	}
 }
-
-body.swatch-2 {
-	footer.template-footer .widget.profile {
-		background-color: transparent;
-	}
-}
-
 
 
 

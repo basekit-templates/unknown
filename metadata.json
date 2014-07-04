@@ -14,8 +14,21 @@
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#fafafa"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#96e47b",
+            "color3":"#ffb477",
+            "color4":"#494141",
+            "color5":"#8b8b8b",
+            "color6":"#ffffff",
+            "color7":"#fafafa"
         }
     },
+    "images":[
+        "images/feature-bg.jpg",
+        "images/train-station.jpg"
+    ],
     "fontSwatch": {
        "title": "Merriweather / Source Sans Pro / Cabin",
         "font1": {

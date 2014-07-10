@@ -178,13 +178,9 @@ body {
 
 .profile-header,
 footer.template-footer {
-	display: table;
-	margin: 0 0 0 auto;
-	padding: 0;
 	text-align: right;
 	.profile, p {
 		display: inline-block;
-		// vertical-align: bottom;
 		padding-bottom: 0;
 		@media @mobile {
 			margin-right: 0;
@@ -198,7 +194,7 @@ footer.template-footer {
 		}
 	}
 	.profile {
-		min-height: 22px;
+		vertical-align: top;
 		margin-left: 10px;
 		padding: 0 10px;
 		background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.5); 
@@ -212,6 +208,12 @@ footer.template-footer {
 		color: @color-swatch1;
 		font-size: 14px;
 		font-family: @font-swatch4-font-family;	
+	}
+	.bk-profile-email {
+		line-height: 36px;
+		@media @mobile {
+			line-height: inherit;
+		}
 	}
 	.bk-profile-email a:hover {
 		opacity: 0.7;
@@ -249,6 +251,10 @@ footer.template-footer {
 	.twitter li {
 		border: 0;
 		padding: 0;
+		p {
+			line-height: 22px;
+			padding: 10px 0;
+		}
 	}	
 	// Form
 	.widget.profile form {

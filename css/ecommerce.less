@@ -609,6 +609,20 @@
 	// Continue to Payment Button
 	.checkout-order-button {
 		margin-bottom: 30px;
+		&:disabled {
+			opacity: 0.2;
+		}
+	}
+	// 
+	.js-shipping-opts {
+		border-bottom: 1px solid darken(@color-swatch1,10%);
+		padding-bottom: 20px;
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 20px;
+		label {
+			margin-bottom: 10px;
+		}
 	}
 }
 

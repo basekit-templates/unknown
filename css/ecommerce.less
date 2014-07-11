@@ -453,6 +453,11 @@
 			padding: 0;
 			border: 0;
 		}
+		@media @mobile {
+			th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+	            width: 100%!important;
+	        }	
+	    }
 		tr td {
 			border-bottom: 1px solid darken(@color-swatch1,10%);
 			@media (max-width: 360px) {
@@ -488,7 +493,7 @@
 				text-align: left;
 				@media @mobile {
 					padding: 20px 10px;
-					line-height: 16px;
+					line-height: 26px;
 				}
 				@media (max-width: 360px) { 
 					padding: 10px 20px;

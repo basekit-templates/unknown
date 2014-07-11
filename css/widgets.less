@@ -2,8 +2,30 @@
 // Widgets
 // -----------------------------
 
-.image {
-	margin: 10px 0;
+.widget.image {
+	margin: 0 0 10px;
+	// border: 1px solid darken(@color-swatch7,10%);
+	span.image-title,
+	span.image-description {
+		text-align: left;
+		margin: 5px 0;
+	}
+	span.image-title {
+		font-family: @font-swatch4-font-family;
+		font-size: @font-swatch4-font-size;
+		font-weight: @font-swatch4-font-weight;
+		line-height: @font-swatch4-line-height;
+		letter-spacing: @font-swatch4-letter-spacing;
+		color: @font-swatch4-color;
+	}
+	span.image-description {
+		font-family: @font-swatch5-font-family;
+		font-size: 14px;
+		font-weight: @font-swatch5-font-weight;
+		line-height: 20px;
+		letter-spacing: @font-swatch5-letter-spacing;
+		color: @font-swatch5-color;
+	}
 }
 
 // -----------------------------
@@ -324,6 +346,9 @@ button.btn,
 				padding-right: 0;
 			}
 		}
+	}
+	@media @mobile {
+
 	}
 }
 

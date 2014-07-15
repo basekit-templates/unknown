@@ -2,7 +2,8 @@
 	"name":"Unknown",
 	"thumbnail":"unknown.png",
 	"screenshot":"unknown.png",
-    "tags": { "en": ["minimal", "clean"] },
+    "templateType":"general",
+    "tags": { "en": ["business", "busy", "light", "social", "contrast", "space"] },
     "pageTypes":["home"],
     "colorSwatches":
     {

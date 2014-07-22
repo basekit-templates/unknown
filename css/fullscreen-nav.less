@@ -49,6 +49,16 @@ body .widget.extendednavigation {
 		@media @tablet {
 			border-bottom: 0;
 		}
+		.text, &.folder .text, a {
+			@media @tablet {
+				font-size: bkscale(@font-swatch6-font-size,0.9);
+				line-height: bkscale(@font-swatch6-line-height,0.9);
+			}
+			@media @mobile {
+				font-size: bkscale(@font-swatch6-font-size,0.8);
+				line-height: bkscale(@font-swatch6-line-height,0.8);
+			}
+		}
 		&.folder {
 			margin-right: 0;
 			&:after {
@@ -63,16 +73,6 @@ body .widget.extendednavigation {
 					right: -10px;
 					top: -1px;
 				}
-				@media @mobile {
-					font-size: bkscale(@font-swatch6-font-size,0.8);
-					line-height: bkscale(@font-swatch6-line-height,0.5);
-				}
-			}
-		}
-		a {
-			@media @mobile {
-				font-size: bkscale(@font-swatch6-font-size,0.8);
-				line-height: bkscale(@font-swatch6-line-height,0.8);
 			}
 		}
 		// Dropdown Menu
@@ -82,7 +82,7 @@ body .widget.extendednavigation {
 			ul {
 				width: 100%;
 				margin-top: 0;
-				padding: 10px 0;
+				padding: 20px 0;
 				background-color: @color-swatch2;
 				border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4); 
 				li {
@@ -161,7 +161,7 @@ body .widget.extendednavigation {
 		height: 100%;
 		width: 100%;
 		overflow: auto;
-		@media @tablet {
+		@media (max-width: 960px) {
 			display: block;
 		}
 	}

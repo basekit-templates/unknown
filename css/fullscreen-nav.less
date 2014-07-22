@@ -39,7 +39,7 @@ body .widget.extendednavigation {
 	}
 	ul li {
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		@media @mobile {
 			margin-bottom: 0;
 		}
@@ -85,11 +85,15 @@ body .widget.extendednavigation {
 			ul {
 				width: 100%;
 				margin-top: 0;
+				padding: 10px 0;
 				background-color: @color-swatch2;
 				border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4); 
-				li .text:after {
-					display: none;
-					content: "";
+				li {
+					margin-bottom: 0;
+					.text:after {
+						display: none;
+						content: "";
+					}
 				}
 			}
 		}

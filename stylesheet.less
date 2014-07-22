@@ -107,7 +107,7 @@ body {
 		padding: 3.5em 4em 3.5em 0;
 	}
 	@media @mobile {
-		padding: 2.5em 4em 1.5em 0;
+		padding: 2.5em 0 1.5em 0;
 	}
 	h1, h2, h3, h4, p {
 		color: @color-swatch1;
@@ -119,10 +119,13 @@ body {
 		}
 	}
 	// Company Name
-	.widget.companyname a {
+	.widget.companyname {
 		@media @mobile {
-			font-size: bkscale(@font-swatch10-font-size,0.8);
-			line-height: bkscale(@font-swatch10-line-height,0.5);
+			width: 80%;
+			a {
+				font-size: bkscale(@font-swatch10-font-size,0.8);
+				line-height: bkscale(@font-swatch10-line-height,0.5);
+			}
 		}
 	}
 	// Button

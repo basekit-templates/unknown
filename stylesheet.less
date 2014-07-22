@@ -323,7 +323,9 @@ footer.template-footer {
 		}
 	}
 	h2 {
-		line-height: bkscale(@font-swatch8-line-height,0.8);
+		@media @mobile {
+			line-height: bkscale(@font-swatch8-line-height,0.9);
+		}
 	}
 }
 

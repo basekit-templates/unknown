@@ -273,13 +273,20 @@ button.btn,
 	}
 	// Tweet Content
 	.twitter-profile-pic {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 12%;
+		margin-right: 2%;
 		@media @tablet {
 			width: 100%;
 			margin-right: 0;
 		}
 	}
 	.twitter-content {
-		float: left;
+		float: none;
+		display: inline-block;
+		width: 85%;
 		.bk-full-name,
 		a, p a, span, a .bk-full-name {
 			color: @font-swatch4-color;
@@ -300,6 +307,9 @@ button.btn,
 				color: @color-swatch2;
 				text-decoration: none;
 			}
+		}
+		p {
+			margin-top: 4px;
 		}
 		// Extra Info
 		time {

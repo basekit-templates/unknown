@@ -288,7 +288,8 @@ button.btn,
 		display: inline-block;
 		width: 85%;
 		.bk-full-name,
-		a, p a, span, a .bk-full-name {
+		a, p a, span, a .bk-full-name, p:last-child {
+			display: inline-block;
 			color: @font-swatch4-color;
 			font-family: @font-swatch4-font-family;
 			font-size: @font-swatch4-font-size;
@@ -310,6 +311,9 @@ button.btn,
 		}
 		p {
 			margin-top: 4px;
+			&:last-child {
+				font-weight: inherit;
+			}
 		}
 		// Extra Info
 		time {
@@ -318,7 +322,7 @@ button.btn,
 		span {
 			font-weight: inherit;
 		}
-		span, span a {
+		span, span a, p:last-child {
 			font-size: 13px;
 		}
 	}

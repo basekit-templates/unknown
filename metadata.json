@@ -2,7 +2,7 @@
 	"name":"Unknown",
 	"thumbnail":"unknown.png",
 	"screenshot":"unknown.png",
-    "templateType":"general",
+    "templateType":"standard",
     "tags": { "en": ["business", "busy", "light", "social", "contrast", "space"] },
     "pageTypes":["home"],
     "colorSwatches":

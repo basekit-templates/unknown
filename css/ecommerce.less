@@ -88,11 +88,6 @@
 		height: 35px;
 		margin-bottom: 12px;
 	    padding: 8px 33px 8px 8px;
-	    -webkit-appearance: none;
-	    -moz-appearance: none;
-	    background-image: image('/images/select-arrow.svg');
-	    background-repeat: no-repeat;
-	    background-size: 15px;
 	    background-position-x: 93%;
 	    background-position-y: 55%;
 		-webkit-border-radius: 0;
@@ -107,15 +102,9 @@
 	    &:focus {
 			outline: 0;
 	    }
-	    @media @mobile {
+	    @media @tablet {
 	        width: 100%;
 	    }
-	}
-	select::-ms-expand {
-	    display: none;
-	}
-	select[name="displayCount"] {
-	    margin-bottom: 0;
 	}
 }
 
@@ -124,14 +113,14 @@
 
 // Shame CSS
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
-	@media @mobile {
+	@media (max-width: 1060px) {
         margin-bottom: 0;
     }
 }
 
 .productlist-filter {
     .form-group {
-        display: inline-block;
+        vertical-align: top;
         @media @mobile {
             width: 100%;
             margin-bottom: 0;
@@ -139,6 +128,7 @@
     }
     // Label
     label {
+    	display: block;
     	font-family: @font-swatch2-font-family;
     	font-size: 14px;
         color: @color-swatch4;
@@ -147,21 +137,18 @@
     }
 	// Product Search
     .productlist-search {
-    	@media @mobile {
-        	margin: 10px 0;
-        }
+    	margin-bottom: 20px;
         input {
-        	max-width: 170px;
             height: 35px;
+            margin-top: 2px;
             border: 1px solid darken(@color-swatch1,10%);
         	background-color: darken(@color-swatch1,4%);
         	-webkit-appearance: none;
             -moz-appearance: none;
             -webkit-border-radius: 0;
-            @media @mobile {
+            @media @tablet {
                 width: 100%;
                 max-width: 100%;
-                margin-bottom: 12px;
             }
         }
         .btn {
@@ -169,8 +156,8 @@
         	top: -6px;
         	margin: 0;
             padding: 4px 14px;
-            @media @mobile {
-            	margin-bottom: 10px;
+            @media @tablet {
+            	top: 0;
             }
         }
     }
@@ -184,6 +171,9 @@
 	line-height: @font-swatch4-line-height;
 	letter-spacing: @font-swatch4-letter-spacing;
 	color: @color-swatch5;
+	@media @tablet {
+		margin-top: 20px;
+	}
 }
 
 // Basket
@@ -304,6 +294,9 @@
 		letter-spacing: @font-swatch4-letter-spacing;
 		color: @font-swatch4-color;
 	}
+	.ecom-product-preview-image-wrap {
+		text-align: left;
+	}
 	// Price
 	.ecom-product-price {
 		color: @color-swatch2;
@@ -397,7 +390,7 @@
 	// Product Description
 	.ecom-product-long-description {
 		padding: 20px 0;
-		margin-bottom: 30px;
+		margin: 20px 0 30px;
 		border-top: 1px solid darken(@color-swatch1,10%);
 		border-bottom: 1px solid darken(@color-swatch1,10%);
 	}

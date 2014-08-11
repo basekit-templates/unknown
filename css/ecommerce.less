@@ -417,7 +417,7 @@
 	// Product Name, Price, Quantity
 	.basket-summary-productname,
 	.basket-summary-pricepu,
-	.basket-summary-quantity,
+	.basket-summary-quantitybtn,
 	.basket-summary-subtotal,
 	.basket-summary-amount {
 		font-family: @font-swatch4-font-family;
@@ -441,10 +441,15 @@
 		margin-top: 8px;
 		.basket-summary-quantity-text {
 			display: block;
+			padding: 0;
+			font-family: @font-swatch4-font-family;
+			color: @font-swatch4-color;
 			font-size: 14px;
 			line-height: 20px;
 		}
 		.quantity-number {
+			position: relative;
+			top: -1px;
 			background-color: darken(@color-swatch1,3%);
 			padding: 1px 10px;
 			font-size: 14px;
@@ -452,12 +457,14 @@
 		button {
 			width: 20px;
 			height: 20px;
+			padding: 0;
+			margin: 0;
 			border: 0;
+			box-shadow: none;
 			background-color: lighten(@color-swatch5,15%);
 			font-size: 13px;
 			font-family: @font-swatch4-font-family;
 			color: @color-swatch1;
-			line-height: 17px;
 			&:hover {
 				background-color: @color-swatch2;
 				cursor: pointer;

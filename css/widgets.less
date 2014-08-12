@@ -162,6 +162,8 @@ button.btn,
 		background-color: @color-swatch2;
 		color: @color-swatch1;
 		text-decoration: none;
+		-webkit-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 	&:focus {
 		outline: none;
@@ -261,12 +263,12 @@ button.btn,
 	}	
 	li {
 		border-bottom: darken(@color-swatch1,10%);
+		&:last-child {
+			padding-bottom: 0;
+		}
 	}
 	ul li a:hover {
 		text-decoration: none;
-	}
-	li:last-child {
-		padding-bottom: 0;
 	}
 	// Tweet Content
 	.twitter-profile-pic {
@@ -296,6 +298,8 @@ button.btn,
 		}
 		// Tweet Link
 		p a, a:hover span.bk-full-name {
+			font-family: @font-swatch5-font-family;
+			font-size: @font-swatch5-font-size;
 			color: @color-swatch2;
 			text-decoration: none;
 		}

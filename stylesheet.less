@@ -14,11 +14,6 @@ a {
 	}
 }
 
-&:hover {
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
 // Mixins
 .border-radius(@radius) {
 	-webkit-border-radius:	@radius;
@@ -144,6 +139,8 @@ body {
 		&:hover {
 			background-color: darken(@color-swatch3,25%);
 			border: 1px solid darken(@color-swatch3,25%);
+			-webkit-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
 		}
 		&:active {
 			-webkit-transform: translate(0, 3px);

@@ -22,8 +22,6 @@
 
 		{% include 'includes/footer.twig' %}
 
-		{% include basekit.bodyScript %}
-
 		<script type="text/javascript">
 			!function() {
 				function supportsSVG() {
@@ -33,12 +31,11 @@
 			}()
 		</script>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{{ asset('libs/jquery-1.10.2.min.js')}}"><\/script>')</script>
-
 		<!-- Fullscreen Overlay Nav !-->
 		<script src="{{asset('js/modernizr.custom.js')}}"></script>
 		<script src="{{asset('js/classie.js')}}"></script>
 		<script src="{{asset('js/fullscreen-nav.js')}}"></script>
+			
+		{% include basekit.bodyScript %}	
 	</body>
 </html>

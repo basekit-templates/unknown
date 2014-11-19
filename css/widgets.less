@@ -537,7 +537,7 @@ button.btn,
 .widget.gallery {
 	margin: 20px 0 20px -0.5%;
 	ul li {
-		@media @tablet {
+		@media (max-width: 850px) {
 			width: 50%;
 			padding-bottom: 50%;
 		}
@@ -784,8 +784,13 @@ button.btn,
 	color: @color-swatch2;
 }
 
-.blog-post-tag a:after {
-	content: ',';
+.blog-post-tag a {
+	&:after {
+		content: ",";
+	}
+	&:last-of-type:after {
+		content: "";
+	}
 }
 
 // Sharing Buttons

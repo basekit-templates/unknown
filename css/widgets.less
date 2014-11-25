@@ -128,14 +128,14 @@ textarea,
 
 // General
 .widget.button button,
-button.btn, 
-.widget.profile form button, 
-.signupform fieldset button, 
-.contactform button.btn, 
+button.btn,
+.widget.profile form button,
+.signupform fieldset button,
+.contactform button.btn,
 .btn,
 .widget.dropbox button,
-.blogsearch form button, 
-.checkout-order-button, 
+.blogsearch form button,
+.checkout-order-button,
 .checkout-empty-link,
 .widget.tweet a,
 .widget.paypalbuynow .widget.button.paypal,
@@ -205,7 +205,7 @@ button.btn,
 		background-size: 25px;
 		&:hover {
 			background-image: image('/images/ic-dropbox-hov.svg');
-		}	
+		}
 	}
 	.file-name {
 		margin-left: 10px;
@@ -260,7 +260,7 @@ button.btn,
 	p {
 		color: @color-swatch4;
 		padding: 0;
-	}	
+	}
 	li {
 		border-bottom: darken(@color-swatch1,10%);
 		&:last-child {
@@ -350,14 +350,14 @@ button.btn,
 	.clearfix;
 	span {
 		&:first-child {
-			a { 
-				margin-left: 0; 
+			a {
+				margin-left: 0;
 				padding-left: 0;
 			}
 		}
 		&:last-child {
-			a { 
-				margin-right: 0; 
+			a {
+				margin-right: 0;
 				padding-right: 0;
 			}
 		}
@@ -407,7 +407,7 @@ button.btn,
 				}
 			}
 			// Text
-			text-indent: inherit;			
+			text-indent: inherit;
 			&:before {
 				display: block;
 				font-family: @font-swatch2-font-family;
@@ -459,11 +459,66 @@ button.btn,
 // Slideshow
 // -----------------------------
 
-.widget.responsiveslideshow {
-	.btn-play, &:hover span.btn-play, 
-	.title, .description {
-		display: none;
+.widget.responsiveslideshow .slideshow-widget .btn-play.pause {
+	color: @color-swatch3;
+	&:before, &:after {
+		width: 8px;
+		height: 26px;
+		border: 0;
+		left: 28px;
+		background-color: @color-swatch4;
 	}
+	&:after {
+		left: 42px;
+	}
+	&:hover {
+		&:before, &:after {
+			background-color:  @color-swatch1;
+		}
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	background-color: @color-swatch1;
+	text-indent: -99999px;
+	width: 80px;
+	height: 66px;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 20px solid transparent;
+		border-left-color: @color-swatch2;
+		left: 32px;
+		top: 29%;
+		border-top-width: 15px;
+		border-bottom-width: 15px;
+	}
+	&:hover {
+		background-color: @color-swatch2;
+		&:before, &:after {
+			border-left-color: @color-swatch1;
+		}
+	}
+}
+
+.content-wrapper {
+	background-color: fadeout(@color-swatch4, 50%);
+}
+
+.widget.responsiveslideshow {
+	.title, .description {
+		 padding: 10px;
+	}
+}
+
+.widget.responsiveslideshow {
 	// Main
 	.slideshow-widget {
 		// Buttons
@@ -511,7 +566,7 @@ button.btn,
 			&.selected {
 				background-color: transparent;
 				border: 1px solid @color-swatch2;
-			} 
+			}
 			&:hover {
 				background-color: @color-swatch2;
 				border: 1px solid @color-swatch2;
@@ -659,7 +714,7 @@ button.btn,
 	margin-bottom: 10px;
 }
 
-// Price 
+// Price
 .standard-price {
 	color: @font-swatch4-color;
 	font-family: @font-swatch4-font-family;

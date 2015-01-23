@@ -1,6 +1,7 @@
 <!-- Header Include !-->
 <header class="template-header clearfix">
 	<div class="company-info">
+	    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
 		{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 		{{widget('content', 'companycontent', {"content":'<h3>Reliving memories.</h3>'})|raw}}
 	</div>

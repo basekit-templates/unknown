@@ -10,8 +10,14 @@ body.edit .widget.extendednavigation {
 // Main Nav
 .widget.extendednavigation {
 	width: 40%;
-	margin: 5em auto;
-	padding: 3em 0;
+	margin: 0 auto;
+	padding: 0;
+
+	ul {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
 	@media (max-width: 960px) {
 		width: 60%;
 	}
@@ -22,6 +28,8 @@ body.edit .widget.extendednavigation {
 	}
 	.extendednavigation {
 		width: 100%;
+		display: table;
+		min-height: 100vh;
 		a.pull {
 			@media @tablet {
 				display: none;
@@ -85,7 +93,7 @@ body.edit .widget.extendednavigation {
 				margin-top: 0;
 				padding: 20px 0;
 				background-color: @color-swatch2;
-				border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4); 
+				border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4);
 				li {
 					margin-bottom: 0;
 					.text:after {
@@ -105,7 +113,7 @@ body.edit .widget.extendednavigation {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(@color-swatch2), 0.95); 
+	background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(@color-swatch2), 0.95);
 }
 
 // Over Crosss
@@ -116,7 +124,7 @@ body.edit .widget.extendednavigation {
 	right: 0;
 	top: 0;
 	overflow: hidden;
-	border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4); 
+	border: 1px solid hsla(hue(@color-swatch1), saturation(@color-swatch1), lightness(@color-swatch1), 0.4);
 	border-right: 0;
 	border-top: 0;
 	background-image: image('/images/cross.png');
@@ -150,21 +158,10 @@ body.edit .widget.extendednavigation {
 		-webkit-transition: opacity 0.5s;
 		transition: opacity 0.5s;
 		z-index: 9999;
-		// Styles
-		display: -webkit-flexbox;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
+		display: block;
 		height: 100%;
 		width: 100%;
 		overflow: auto;
-		@media (max-width: 960px) {
-			display: block;
-		}
 	}
 }
 

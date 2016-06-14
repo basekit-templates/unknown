@@ -1,7 +1,7 @@
 {
 	"name":"Unknown",
 	"thumbnail":"unknown.png",
-	"screenshot":"unknown.png",
+	"screenshot":"unknown-screenshot.jpg",
     "templateType":"standard",
     "tags": { "en": ["business", "busy", "light", "social", "contrast", "space"] },
     "pageTypes":["home"],

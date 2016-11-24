@@ -48,7 +48,18 @@ textarea,
 	}
 }
 
-.widget.ecomcheckout .delivery select {
+.advancedcontactform form select {
+	margin: 10px 0;
+	padding: 8px 16px;
+	background-color: @color-swatch7;
+	border: 2px solid darken(@color-swatch7,10%);
+	&:focus {
+		border-color: @color-swatch2;
+	}
+}
+
+.widget.ecomcheckout .delivery select,
+.advancedcontactform form select {
 	height: 56px;
 	margin-bottom: 1em;
 	font-size: 12px;
@@ -56,8 +67,9 @@ textarea,
 	background-size: 20px;
 }
 
-// Contact, Signup, Profile, Delivery
+// Contact, Signup, Profile, Delivery, Advanced Form
 .contactform,
+.advancedcontactform,
 .signupform,
 .canvas .widget.profile form,
 .bottom-profile .widget.profile form,
@@ -117,6 +129,11 @@ textarea,
 	}
 }
 
+.advancedcontactform .option-list {
+	padding: 1em 0;
+}
+
+
 // -----------------------------
 // Buttons
 // -----------------------------
@@ -132,6 +149,7 @@ button.btn,
 .widget.profile form button,
 .signupform fieldset button,
 .contactform button.btn,
+.advancedcontactform fieldset button,
 .btn,
 .widget.dropbox button,
 .blogsearch form button,

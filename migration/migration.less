@@ -18,7 +18,7 @@
 }
   
 // Main content spacing (replace with corresponding template class)
-.main {
+.canvas {
   padding: 0;
 }
 
@@ -27,6 +27,21 @@
   overflow: inherit;
 }
 
+.feature {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+  @media @tablet {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media @mobile {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 
 
 
@@ -35,7 +50,7 @@
 
 
 // Replace with corresponding template values
-@container-width: 960px;
+@container-width: 860px;
 
 @spacing__first--desktop: 40px;
 @spacing__first--tablet:  30px;
@@ -105,5 +120,17 @@
   }
 }
 
+
+// Section controls
+.row-overlay:before,
+.row-overlay:after {
+    background: none !important;
+}
+.row-overlay:before {
+    background-image: linear-gradient(to right, transparent , #e8e8e8) !important;
+}
+.row-overlay:after {
+    background-image: linear-gradient(to left, transparent , #e8e8e8) !important;
+}
 
 } // End of #migrated-site

@@ -1,5 +1,6 @@
 {
 	"name":"Unknown",
+	"versionTenCompatible": 1,
 	"thumbnail":"unknown.png",
 	"screenshot":"unknown-screenshot.jpg",
     "templateType":"standard",

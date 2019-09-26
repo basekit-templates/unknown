@@ -9,7 +9,7 @@
 
 	</head>
 
-	<body class="{{ page.backgroundClass }} {{ site.colorSwatch }}">
+	<body {{ isV10sSite ? 'id="migrated-site"' : '' }} class="{{ page.backgroundClass }} {{ site.colorSwatch }}">
 
 		<div class="wrapper">
 
